@@ -1,0 +1,89 @@
+/* CSS Styles for Calculator */
+
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 280px;
+}
+
+input[type="text"] {
+    width: 260px;
+    height: 50px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    text-align: right;
+    cursor: default;
+}
+
+input[type="text"]:focus{
+    outline: none;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+button {
+    background-color: #999;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #777;
+}
+
+button:active {
+    background-color: #555;
+}
+
+.del-btn {
+    background-color: red;
+    color: #fff;
+}
+
+.del-btn:hover {
+    background-color: darkred;
+}
+
+.equal-btn{
+    background-color: green;
+    color: #fff;
+}
+
+.equal-btn:hover {
+    background-color: darkgreen;
+}
+
+.orange-btn {
+    background-color: #f90;
+    color: #fff;
+}
+
+.orange-btn:hover {
+    background-color: #f60;
+}
